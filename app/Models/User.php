@@ -54,6 +54,10 @@ class User extends Authenticatable implements  HasTenants
         ];
     }
 
+    public function team(): BelongsToMany
+    {
+        return $this->belongsToMany(Team::class);
+    }
     public function teams(): BelongsToMany
     {
         return $this->belongsToMany(Team::class);

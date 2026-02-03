@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Models;
+// namespace App\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Notifications\Notifiable;
+// use Illuminate\Database\Eloquent\Concerns\HasUuids;
+// use Illuminate\Database\Eloquent\Factories\HasFactory;
+// use Illuminate\Database\Eloquent\Model;
+// use Illuminate\Notifications\Notifiable;
 
-class team_user extends Model
-{
-    use HasFactory, Notifiable, HasUuids;
+// class team_user extends Model
+// {
+//     use HasFactory, Notifiable, HasUuids;
 
-    protected $table = 'team_user';
-    protected $fillable = [
-        'team_id',
-        'user_id',
-    ];
-}
+//     protected $table = 'team_user';
+//     protected $fillable = [
+//         'team_id',
+//         'user_id',
+//     ];
+// }
