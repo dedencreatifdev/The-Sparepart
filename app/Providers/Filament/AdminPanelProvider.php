@@ -64,7 +64,7 @@ class AdminPanelProvider extends PanelProvider
             ->font('Poppins')
             ->maxContentWidth(Width::Full)
             // ->sidebarCollapsibleOnDesktop()
-            ->sidebarFullyCollapsibleOnDesktop()
+            // ->sidebarFullyCollapsibleOnDesktop()
             ->sidebarWidth('18rem')
             ->tenant(Team::class)
             ->tenantRegistration(RegisterTeam::class)
