@@ -14,6 +14,10 @@ class Team extends Model
 
     protected $fillable = [
         'name',
+        'alamat',
+        'telepon',
+        'email',
+        'logo',
     ];
 
     public function members(): BelongsToMany
