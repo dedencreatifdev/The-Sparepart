@@ -8,22 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Notifications\Notifiable;
 
-class Team extends Model
+class Produk extends Model
 {
+    /** @use HasFactory<\Database\Factories\ProdukFactory> */
     use HasFactory, Notifiable, HasUuids;
 
     protected $fillable = [
-        'name',
-        'alamat',
-        'telepon',
-        'email',
-        'logo',
+        'kode_produk',
+        'nama_produk',
+        'satuan',
+        'kategori',
+        'brand',
+        'deskripsi',
+        'harga',
+        'stok',
     ];
-
-    public function members(): BelongsToMany
-    {
-        return $this->belongsToMany(User::class, 'team_user');
-    }
 
     public function team(): BelongsToMany
     {
