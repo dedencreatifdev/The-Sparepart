@@ -114,4 +114,9 @@
         padding:0;
         margin:0;
     }
+
+
+    .fi-section-content-ctn{
+    @apply border-0;
+}
 }
