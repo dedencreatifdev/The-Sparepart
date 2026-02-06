@@ -1,4 +1,4 @@
-@import '../../../../vendor/filament/filament/resources/css/theme.css';
+@import "../../../../vendor/filament/filament/resources/css/theme.css";
 
 @source '../../../../app/Filament/**/*';
 @source '../../../../resources/views/filament/**/*';
@@ -34,7 +34,7 @@
             font-size: 18px;
         }
         /* padding:0; */
-        margin:0;
+        margin: 0;
     }
 
     .fi-header-heading {
@@ -48,37 +48,37 @@
 
     /* MENU */
     .fi-topbar-item {
-        a span{
+        a span {
             color: white;
         }
-        .fi-icon{
+        .fi-icon {
             color: white;
         }
-        .fi-topbar-item-label{
+        .fi-topbar-item-label {
             color: white;
         }
     }
     .fi-topbar-item:hover {
-        a span{
+        a span {
             color: var(--primary-600);
         }
-        .fi-icon{
+        .fi-icon {
             color: var(--primary-600);
         }
-        .fi-topbar-item-label{
+        .fi-topbar-item-label {
             color: var(--primary-600);
         }
     }
     .fi-topbar-item.fi-active {
-         a span{
-             color: var(--primary-600);
+        a span {
+            color: var(--primary-600);
             font-weight: normal;
             font-size: small;
-         }
-        .fi-icon{
+        }
+        .fi-icon {
             color: var(--primary-600);
         }
-        .fi-topbar-item-label{
+        .fi-topbar-item-label {
             color: var(--primary-600);
         }
     }
@@ -110,13 +110,15 @@
     }
 
     /*  */
-    .fi-topbar-ctn{
-        padding:0;
-        margin:0;
+    .fi-topbar-ctn {
+        padding: 0;
+        margin: 0;
     }
 
-
-    .fi-section-content-ctn{
-    @apply border-0;
 }
+
+.fi-ta-content{
+    border-radius: 1;
+    padding: 0;
+    margin: 5px;
 }

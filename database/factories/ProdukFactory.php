@@ -18,6 +18,14 @@ class ProdukFactory extends Factory
     {
         return [
             //
+            'kode_produk' => $this->faker->unique()->bothify('PRD-####'),
+            'nama_produk' => $this->faker->word(),
+            'satuan' => $this->faker->randomElement(['pcs', 'box', 'kg', 'liter']),
+            'kategori' => $this->faker->randomElement(['Elektronik', 'Otomotif', 'Rumah Tangga', 'Alat Tulis']),
+            'brand' => $this->faker->company(),
+            'deskripsi' => $this->faker->sentence(),
+            'harga' => $this->faker->numberBetween(10000, 1000000),
+            'stok' => $this->faker->numberBetween(0, 500),
         ];
     }
 }
