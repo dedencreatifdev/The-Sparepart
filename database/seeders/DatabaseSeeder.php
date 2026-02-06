@@ -46,7 +46,7 @@ class DatabaseSeeder extends Seeder
         )->team()->attach($Team2->id);
 
         // Produk TEAM 1
-        for ($i=1; $i < 10; $i++) {
+        for ($i=1; $i < 15; $i++) {
             # code...
             Produk::factory()->create(
                 [
