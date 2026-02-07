@@ -38,7 +38,6 @@ class ProdukResource extends Resource
     public static function table(Table $table): Table
     {
         return ProduksTable::configure($table);
-        // return view('produk', compact('produk'));
     }
 
     public static function getRelations(): array
@@ -46,11 +45,6 @@ class ProdukResource extends Resource
         return [
             //
         ];
-    }
-
-    public function render(): View
-    {
-        return view('produk');
     }
 
     public static function getPages(): array

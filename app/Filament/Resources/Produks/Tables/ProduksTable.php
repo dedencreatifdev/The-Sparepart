@@ -31,34 +31,34 @@ class ProduksTable
                     ->searchable(),
                 TextColumn::make('nama_produk')
                     ->searchable(),
-                TextColumn::make('satuan')
-                    ->searchable(),
-                TextColumn::make('kategori')
-                    ->searchable(),
-                TextColumn::make('brand')
-                    ->searchable(),
-                TextColumn::make('harga')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('stok')
-                    ->numeric()
-                    ->sortable(),
-                TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                // TextColumn::make('satuan')
+                //     ->searchable(),
+                // TextColumn::make('kategori')
+                //     ->searchable(),
+                // TextColumn::make('brand')
+                //     ->searchable(),
+                // TextColumn::make('harga')
+                //     ->numeric()
+                //     ->sortable(),
+                // TextColumn::make('stok')
+                //     ->numeric()
+                //     ->sortable(),
+                // TextColumn::make('created_at')
+                //     ->dateTime()
+                //     ->sortable()
+                //     ->toggleable(isToggledHiddenByDefault: true),
+                // TextColumn::make('updated_at')
+                //     ->dateTime()
+                //     ->sortable()
+                //     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->contentGrid([
                 'default' => 2,
-                'sm' => 3,
-                'md' => 4,
-                'lg' => 5,
-                'xl' => 6,
-                '2xl' => 7,
+                'sm' => 2,
+                'md' => 3,
+                'lg' => 4,
+                'xl' => 5,
+                '2xl' => 6,
 
             ])
             ->filters([

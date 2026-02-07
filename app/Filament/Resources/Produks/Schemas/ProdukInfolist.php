@@ -10,21 +10,19 @@ use Filament\Support\Enums\TextSize;
 
 class ProdukInfolist
 {
+
     public static function configure(Schema $schema): Schema
     {
         return $schema
             ->components([
                 Section::make()
-
-                    // ->columns(3)
                     ->components([
                         ImageEntry::make('image')
                             ->defaultImageUrl(function ($record) {
-                                return url('https://partsouq.com/assets/tesseract/assets/partsimages/Mitsubishi/'.$record->kode_produk.'.jpg');
+                                return url('https://partsouq.com/assets/tesseract/assets/partsimages/Mitsubishi/' . $record->kode_produk . '.jpg');
                             })
                             ->size("100%")
-                            // ->limitedRemainingText(size: TextSize::Large)
-                            ->label('')
+                            ->label('Images')
                             ->columnSpanFull(),
                         TextEntry::make('kode_produk'),
                         TextEntry::make('nama_produk'),
@@ -44,8 +42,7 @@ class ProdukInfolist
                         TextEntry::make('updated_at')
                             ->dateTime()
                             ->placeholder('-'),
-                    ])
-                    ->columns(3),
+                    ]),
             ]);
     }
 }
