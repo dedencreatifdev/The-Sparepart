@@ -36,10 +36,10 @@ class AdminPanelProvider extends PanelProvider
             ->viteTheme('resources/css/filament/admin/theme.css')
             ->login()
             ->colors([
-                'danger' => Color::Rose,
+                'danger' => Color::Indigo,
                 'gray' => Color::Gray,
                 'info' => Color::Blue,
-                'primary' => Color::Indigo,
+                'primary' => Color::Rose,
                 'success' => Color::Emerald,
                 'warning' => Color::Orange,
             ])
@@ -69,10 +69,10 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->spa()
             ->font('tahoma')
-            // ->maxContentWidth(Width::Full)
+            ->maxContentWidth(Width::Full)
             // ->sidebarCollapsibleOnDesktop()
             // ->sidebarFullyCollapsibleOnDesktop()
-            ->topNavigation()
+            // ->topNavigation()
             ->sidebarWidth('18rem')
             ->tenant(Team::class)
             ->tenantRegistration(RegisterTeam::class)

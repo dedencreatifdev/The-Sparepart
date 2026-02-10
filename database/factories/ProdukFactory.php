@@ -23,7 +23,7 @@ class ProdukFactory extends Factory
             'satuan' => $this->faker->randomElement(['pcs', 'box', 'kg', 'liter']),
             'kategori' => $this->faker->randomElement(['Elektronik', 'Otomotif', 'Rumah Tangga', 'Alat Tulis']),
             'brand' => $this->faker->company(),
-            'deskripsi' => $this->faker->sentence(),
+            'deskripsi' => 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lore,em ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             'harga' => $this->faker->numberBetween(10000, 1000000),
             'stok' => $this->faker->numberBetween(0, 500),
         ];

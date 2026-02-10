@@ -46,11 +46,11 @@ class DatabaseSeeder extends Seeder
         )->team()->attach($Team2->id);
 
         // Produk TEAM 1
-        for ($i=1; $i < 15; $i++) {
+        for ($i=1; $i < 100; $i++) {
             # code...
             Produk::factory()->create(
                 [
-                    'kode_produk' => 'Produk ' . $i,
+                    'kode_produk' => 'Produk' . $i,
                     // 'nama_produk' => 'Deskripsi Produk'. $i,
                     // 'satuan' => 15000,
                     // 'kategori' => 'Elektronik',
@@ -65,7 +65,7 @@ class DatabaseSeeder extends Seeder
         // Produk TEAM 2
         Produk::factory()->create(
             [
-                'kode_produk' => 'Produk 001',
+                'kode_produk' => 'Produk001',
                 // 'nama_produk' => 'Deskripsi Produk 1',
                 // 'satuan' => 10000,
                 // 'kategori' => 'Elektronik',

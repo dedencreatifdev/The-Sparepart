@@ -13,6 +13,7 @@ class ProdukForm
         return $schema
             ->components([
                 TextInput::make('kode_produk')
+                    ->unique()
                     ->required(),
                 TextInput::make('nama_produk')
                     ->required(),
